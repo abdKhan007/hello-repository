@@ -1,0 +1,158 @@
+.navbar{
+    background: var(--wht);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.logo img{
+    width: 180px;
+    height: 40px;
+}
+.navbar-box{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+}
+.left-navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    text-transform: uppercase;
+    color: var(--blk);
+    font-size: 14px;
+    font-weight: 500;
+    transition: .4s;
+    justify-content: center;
+    width: 100px;
+    height: 70px;
+}
+.icons-nav{
+    font-size: 13px;
+}
+.right-navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.loggin{
+    color: var(--blk);
+    font-weight: 500;
+    transition: .6s;
+}
+.loggin:hover{
+    color: var(--red);
+}
+.siggn{
+    color: var(--wht);
+    font-size: 18px;
+    background: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    transition: .6s;
+}
+.siggn:hover{
+    background: var(--oxiri);
+}
+.link:hover{
+    color: var(--aqua);
+    background: var(--hgf);
+}
+.pro{
+    position: relative;
+}
+.dnb{
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    background: var(--wht);
+}
+.dnb a{
+    color: var(--blk);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 90px;
+}
+.dnb a:hover{
+    color: var(--aqua);
+    background: var(--hgf);
+}
+.pro:hover .dnb{
+    display: flex;
+}
+.menu-icon{
+    display: none;
+    color: var(--blk);
+    font-size: 20px;
+}
+.people{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .links{
+        display: none;
+        flex-direction: column;
+        background: var(--wht);
+        width: 200px;
+        position: relative;
+        top: 30px;
+    }
+    .menu-icon{
+        font-size: 25px;
+        display: flex;
+        position: absolute;
+        left: 140px;
+        top: -10px;
+    }
+    .medias{
+        position: relative;
+    }
+    .medias:hover .links{
+        display: flex;
+        position: absolute;
+    }
+    .dnb{
+        display: none;
+    }
+    .right-navbar{
+        display: none;
+    }
+    .people{
+        display: flex;
+        font-size: 40px;
+        color: var(--first);
+    }
+}
